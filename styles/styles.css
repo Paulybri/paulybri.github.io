@@ -38,7 +38,7 @@ button, a {
     transform: scale(1.03);
     position: relative;
     /* Full height */
-    height: 100vh;
+    height: 120vh;
   
     /* Center and scale the image nicely */
     background-attachment: fixed;
