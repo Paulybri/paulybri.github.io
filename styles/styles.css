@@ -17,6 +17,7 @@ h2 {
 }
 
 button, a {
+    font-family: 'Open Sans Condensed', sans-serif;
     -webkit-appearance: button;
     -moz-appearance: button;
     appearance: button;
@@ -25,13 +26,15 @@ button, a {
     font-size: 2em;
     padding: 10 15;
     background-color: bisque;
+    cursor: pointer;
 }
 
 .social-button{
-    background-color:transparent;
+    background-color: #00000054;
     border-width: 1px;
-    border-style: solid;
-    border-color: rgb(128, 107, 39);
+    color: #eaa468;
+    cursor: pointer;
+    margin: 0 4;
 }
 
 .bg-image {
@@ -88,6 +91,14 @@ button, a {
 
 .release-image {
     width: min(80%, 500px);
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
 
 .arrow-down{
