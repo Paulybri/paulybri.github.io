@@ -47,7 +47,11 @@ button, a {
     height: 95px;
     display: flex;  
     justify-content: center;  
-    align-items: center;  
+    align-items: center; 
+    transition: 0.3s;
+}
+.social-button:hover{
+    background-color: #000000a9;
 }
 
 .bg-image {
@@ -109,6 +113,10 @@ button, a {
     font-weight: bold;
     font-size: 3em;
     background-color: #ffc786;
+    transition: 0.3s;
+}
+.release-button:hover{ 
+    transform: scale(1.1);
 }
 
 .button-row{
