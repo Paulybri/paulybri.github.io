@@ -41,7 +41,7 @@ button, a {
     border-width: 1px;
     color: #eaa468;
     cursor: pointer;
-    margin: 0 4;
+    margin: 4 4;
     font-size: 3.5em;
     width: 95px;
     height: 95px;
@@ -123,7 +123,9 @@ button, a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 0px 50px;
     margin-bottom: 30px;
 }
 
