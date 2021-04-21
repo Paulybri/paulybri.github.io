@@ -7,9 +7,26 @@ body, html {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+section#home {
+    padding-top: 100px;
+    margin-bottom: 250px;
+}
+
+section#socials {
+    margin-bottom: 125px;
+}
+
 h1 {
     font-size: 4em;
-
+    margin: 10 0;
 }
 
 h2 {
@@ -40,19 +57,27 @@ a, a:visited, a:hover, a:active {
     display: flex;
     flex-direction: row;
     background-color: #ffd0b2ff;
-    padding: 0px 50px;
+    padding: 5px 0px;
     box-sizing: border-box;
+    position: fixed;
+    justify-content: center;
+    top: 0;
 }
 
-.top-menu > a {
+.top-menu-container {
+    width: 95%;
+}
+
+.top-menu-button {
     height: 100%;
     font-size: 1.5em;
-    padding: 10 15;
+    padding: 0 10;
     transform: scale(1);
     transition: transform 0.3s;
+    overflow: visible;
 }
 
-.top-menu > a:hover{ 
+.top-menu-button:hover{ 
     transform: scale(1.1);
 }
 
@@ -67,14 +92,6 @@ button {
     padding: 10 15;
     background-color: #ffc786;
     cursor: pointer;
-}
-
-#socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-top: 100px;
 }
 
 .social-button{
@@ -113,32 +130,29 @@ button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    box-sizing: border-box;
 
   }
 
 .container{
     overflow: auto;
-    padding: none;
-    margin:none;
-    top: 0px; 
+    top: 43px; 
     flex:1;
     width: 100%;
-    height: 100vh;
-    /* height: calc(100vh - 53px); */
+    height: calc(100vh - 43px);
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .logo-image {
     width: min(80%, 500px);
-    padding-top: 100px;
     text-align: center;
 }
 
 .release {
-    margin-top: 300px;
     width: min(80%, 500px);
     text-align: center;
     background-color: #ffd0b266;
@@ -173,7 +187,6 @@ button {
 
 .about {
     width: min(100%, 800px);
-    margin-top: 200px;
 }
 
 .about-image {
