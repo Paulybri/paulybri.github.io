@@ -165,11 +165,18 @@ button {
 }
 
 .release-button {
+    align-items: center;
+    display: flex;
     font-weight: bold;
     font-size: 3em;
     background-color: #ffc786;
     transform: scale(1);
     transition: transform 0.3s;
+}
+
+.release-button > i {
+    font-size: 0.7em;
+    margin-right: 10px;
 }
 .release-button:hover{ 
     transform: scale(1.1);
