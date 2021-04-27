@@ -81,7 +81,7 @@ a, a:visited, a:hover, a:active {
     transform: scale(1.1);
 }
 
-button {
+button, .button {
     font-family: 'Open Sans Condensed', sans-serif;
     -webkit-appearance: button;
     -moz-appearance: button;
