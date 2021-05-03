@@ -109,7 +109,11 @@ button, .button {
     transition: 0.3s;
 }
 .social-button:hover{
+    color: #eaa468;
     background-color: #000000a9;
+}
+.social-button:active, .social-button:visited {
+    color: #eaa468;  
 }
 
 .bg-image {
