@@ -164,6 +164,10 @@ button, .button {
     padding-bottom: 100px;
 }
 
+.release h1 {
+    width: min(80%, 500px);
+}
+
 .release-image {
     width: min(80%, 500px);
 }
