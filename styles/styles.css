@@ -227,6 +227,41 @@ button, .button {
     border-bottom-right-radius: 50px;
 }
 
+.studio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(80%, 800px);
+}
+
+section#studio {
+    margin-bottom: 250px;
+    background-color: #ffd0b266;
+}
+
+ .studio-image {
+    width: 100%;
+}
+
+.studio-service-list {
+    margin: 30 0;
+}
+
+.studio-service-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;  
+    align-items: center; 
+}
+
+.studio-service-icon {
+    font-size: 3.5em;
+}
+
+.studio-service-label {
+    font-size: 2.5em;
+    margin-left: 20;
+}
 .footer{
     width: 100%;
     background-color: #ffc786;
