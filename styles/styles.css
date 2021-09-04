@@ -244,7 +244,11 @@ section#studio {
 }
 
 .studio-service-list {
+    display: flex;
+    flex-direction: column;
     margin: 30 0;
+    justify-content: left; 
+    
 }
 
 .studio-service-list-item {
