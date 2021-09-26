@@ -243,6 +243,16 @@ section#studio {
     width: 100%;
 }
 
+.studio-button {
+    width: fit-content;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.studio-button:hover{ 
+    transform: scale(1.1);
+}
+
 .studio-service-list {
     display: flex;
     flex-direction: column;
