@@ -209,7 +209,7 @@ button, .button {
     height: 800px;
     background-image: 
     linear-gradient(#e8a35e00 60%, #e8a45e),
-    url('../img/about-background-500px.jpg');
+    url('../img/about-background-500px.png');
     background-size: cover;
     background-position: center;
     border-top-left-radius: 50px;
