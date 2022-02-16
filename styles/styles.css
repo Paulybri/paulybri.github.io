@@ -1,10 +1,16 @@
-body, html {
+body,
+html {
     height: 100vh;
     background-color: rgb(222 182 126);
     overflow: hidden;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.vl {
+    border-left: 1px solid rgba(0, 0, 0, 0.411);
+    height: 50px
 }
 
 section {
@@ -45,10 +51,12 @@ p {
     font-size: 1.4em;
 }
 
-a, a:visited, a:hover, a:active {
+a,
+a:visited,
+a:hover,
+a:active {
     color: inherit;
     text-decoration: none;
-
 }
 
 .top-menu {
@@ -77,11 +85,12 @@ a, a:visited, a:hover, a:active {
     overflow: visible;
 }
 
-.top-menu-button:hover{ 
+.top-menu-button:hover {
     transform: scale(1.1);
 }
 
-button, .button {
+button,
+.button {
     font-family: 'Open Sans Condensed', sans-serif;
     -webkit-appearance: button;
     -moz-appearance: button;
@@ -94,7 +103,7 @@ button, .button {
     cursor: pointer;
 }
 
-.social-button{
+.social-button {
     background-color: #00000054;
     border-width: 1px;
     color: #eaa468;
@@ -103,24 +112,26 @@ button, .button {
     font-size: 3.5em;
     width: 95px;
     height: 95px;
-    display: flex;  
-    justify-content: center;  
-    align-items: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: 0.3s;
 }
-.social-button:hover{
+
+.social-button:hover {
     color: #eaa468;
     background-color: #000000a9;
 }
-.social-button:active, .social-button:visited {
-    color: #eaa468;  
+
+.social-button:active,
+.social-button:visited {
+    color: #eaa468;
 }
 
 .bg-image {
     overflow: hidden;
     /* The image used */
     background-image: url("../img/pexels-abdullah-ghatasheh-1631678.jpg");
-  
     /* Add the blur effect */
     filter: blur(5px);
     -webkit-filter: blur(5px);
@@ -128,20 +139,18 @@ button, .button {
     position: relative;
     /* Full height */
     height: 120vh;
-  
     /* Center and scale the image nicely */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
+}
 
-  }
-
-.container{
+.container {
     overflow: auto;
-    top: 43px; 
-    flex:1;
+    top: 43px;
+    flex: 1;
     width: 100%;
     height: calc(100vh - 43px);
     position: absolute;
@@ -182,15 +191,16 @@ button, .button {
     transition: transform 0.3s;
 }
 
-.release-button > i {
+.release-button>i {
     font-size: 0.7em;
     margin-right: 10px;
 }
-.release-button:hover{ 
+
+.release-button:hover {
     transform: scale(1.1);
 }
 
-.button-row{
+.button-row {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -207,9 +217,7 @@ button, .button {
 .about-image {
     width: 100%;
     height: 800px;
-    background-image: 
-    linear-gradient(#e8a35e00 60%, #e8a45e),
-    url('../img/about-background-500px.png');
+    background-image: linear-gradient(#e8a35e00 60%, #e8a45e), url('../img/about-background-500px.png');
     background-size: cover;
     background-position: center;
     border-top-left-radius: 50px;
@@ -227,7 +235,7 @@ button, .button {
     border-bottom-right-radius: 50px;
 }
 
-.studio{
+.studio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -239,8 +247,13 @@ section#studio {
     background-color: #ffd0b266;
 }
 
- .studio-image {
-    width: 100%;
+.studio-logo {
+    width: 200px;
+    margin-bottom: 50px;
+}
+
+.studio-image {
+    width: min(100%, 600px);
 }
 
 .studio-button {
@@ -249,7 +262,7 @@ section#studio {
     transition: transform 0.3s;
 }
 
-.studio-button:hover{ 
+.studio-button:hover {
     transform: scale(1.1);
 }
 
@@ -257,15 +270,14 @@ section#studio {
     display: flex;
     flex-direction: column;
     margin: 30 0;
-    justify-content: left; 
-    
+    justify-content: left;
 }
 
 .studio-service-list-item {
     display: flex;
     flex-direction: row;
-    justify-content: left;  
-    align-items: center; 
+    justify-content: left;
+    align-items: center;
 }
 
 .studio-service-icon {
@@ -276,7 +288,8 @@ section#studio {
     font-size: 2.5em;
     margin-left: 20;
 }
-.footer{
+
+.footer {
     width: 100%;
     background-color: #ffc786;
     display: flex;
@@ -287,13 +300,17 @@ section#studio {
     box-sizing: border-box;
 }
 
-.arrow-down{
+.arrow-down {
     font-size: 4em;
-    -webkit-animation: mover 1s infinite  alternate;
-    animation: mover 1s infinite  alternate;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
 }
 
 @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-10px); }
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
 }

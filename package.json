@@ -1,23 +1,23 @@
 {
-  "name": "pside.ca",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Paulybri/pside.ca.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Paulybri/pside.ca/issues"
-  },
-  "homepage": "https://github.com/Paulybri/pside.ca#readme",
-  "dependencies": {
-    "serve": "^11.3.2"
-  }
+    "name": "paulybri.github.io",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "serve": "serve"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Paulybri/paulybri.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Paulybri/paulybri.github.io/issues"
+    },
+    "homepage": "https://github.com/Paulybri/paulybri.github.io#readme",
+    "dependencies": {
+        "serve": "^13.0.2"
+    }
 }
