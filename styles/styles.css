@@ -240,6 +240,8 @@ button,
     flex-direction: column;
     align-items: center;
     width: min(80%, 800px);
+    justify-content: left;
+    text-align: left;
 }
 
 section#studio {
@@ -254,6 +256,7 @@ section#studio {
 
 .studio-image {
     width: min(100%, 600px);
+    margin-bottom: 20px;
 }
 
 .studio-button {
@@ -278,6 +281,7 @@ section#studio {
     flex-direction: row;
     justify-content: left;
     align-items: center;
+    margin-bottom: 25px;
 }
 
 .studio-service-icon {
@@ -287,6 +291,29 @@ section#studio {
 .studio-service-label {
     font-size: 2.5em;
     margin-left: 20;
+}
+
+.pricing-table{
+    width: min(95%, 1200px);
+    text-align: center;
+}
+
+.pricing-table > td{
+    height : 50px;
+}
+
+/* First column of table */
+.pricing-table-first-column{  
+    font-weight: bold;    
+}
+
+.pricing-table-header{
+    height : 100px;
+}
+
+.pricing-table-footer{
+    font-weight: bold;
+    background-color: rgba(99, 185, 99, 0.555);
 }
 
 .footer {
@@ -304,6 +331,12 @@ section#studio {
     font-size: 4em;
     -webkit-animation: mover 1s infinite alternate;
     animation: mover 1s infinite alternate;
+}
+
+.question-quote{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-size: 1.5em;
 }
 
 @-webkit-keyframes mover {
