@@ -238,7 +238,6 @@ button,
 .studio {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: min(80%, 800px);
     justify-content: left;
     text-align: left;
@@ -250,11 +249,14 @@ section#studio {
 }
 
 .studio-logo {
+    margin-top: 100px;
+    align-self: center;
     width: 200px;
     margin-bottom: 50px;
 }
 
 .studio-image {
+    align-self: center;
     width: min(100%, 600px);
     margin-bottom: 20px;
 }
@@ -293,12 +295,18 @@ section#studio {
     margin-left: 20;
 }
 
+#pricing{
+    background-color: #ffd0b2c7;
+}
+
 .pricing-table{
+    margin-top: 30px;
+    border-collapse : collapse; 
     width: min(95%, 1200px);
     text-align: center;
 }
 
-.pricing-table > td{
+.pricing-table td{
     height : 50px;
 }
 
@@ -308,12 +316,29 @@ section#studio {
 }
 
 .pricing-table-header{
-    height : 100px;
+    font-size: 1.6em;
 }
 
 .pricing-table-footer{
-    font-weight: bold;
-    background-color: rgba(99, 185, 99, 0.555);
+    border-top: 1px solid rgb(71, 71, 71);
+    font-size: 1.6em;
+}
+
+.pricing-icon{
+    font-size: 1.3em;
+}
+
+.green{
+    color: rgb(97, 161, 97);
+}
+
+.gray{
+    color: rgb(172, 172, 172);
+}
+
+.align-right{
+    align-self: right;
+    text-align: right;
 }
 
 .footer {
