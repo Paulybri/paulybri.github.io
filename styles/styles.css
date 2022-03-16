@@ -243,6 +243,14 @@ button,
     text-align: left;
 }
 
+.packages {
+    display: flex;
+    flex-direction: column;
+    width: min(95%, 800px);
+    justify-content: left;
+    text-align: left;
+}
+
 section#studio {
     margin-bottom: 250px;
     background-color: #ffd0b266;
@@ -251,14 +259,15 @@ section#studio {
 .studio-logo {
     margin-top: 100px;
     align-self: center;
-    width: 200px;
+    width: min(80%, 300px);
     margin-bottom: 50px;
 }
 
 .studio-image {
     align-self: center;
     width: min(100%, 600px);
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .studio-button {
@@ -271,11 +280,20 @@ section#studio {
     transform: scale(1.1);
 }
 
+.portfolio-button {
+    background-color: #ffc98a75;
+    font-size: 1.5em;
+}
+
 .studio-service-list {
     display: flex;
     flex-direction: column;
     margin: 30 0;
     justify-content: left;
+}
+
+.studio-service-list p {
+    margin: 11px 0px;
 }
 
 .studio-service-list-item {
@@ -286,8 +304,17 @@ section#studio {
     margin-bottom: 25px;
 }
 
-.studio-service-icon {
+.studio-service-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
     font-size: 3.5em;
+}
+
+.studio-service-icon {
+    font-size: 3.0em;
 }
 
 .studio-service-label {
@@ -312,20 +339,22 @@ section#studio {
 
 /* First column of table */
 .pricing-table-first-column{  
-    font-weight: bold;    
+    font-size: min(1.3em, 3vw);
+    text-align: right;
 }
 
 .pricing-table-header{
-    font-size: 1.6em;
+    font-size: min(1.6em, 3vw);
+    font-weight: bolder;  
 }
 
 .pricing-table-footer{
     border-top: 1px solid rgb(71, 71, 71);
-    font-size: 1.6em;
+    font-size: min(1.8em, 4vw);
 }
 
 .pricing-icon{
-    font-size: 1.3em;
+    font-size: min(1.3em, 4vw);
 }
 
 .green{
@@ -333,7 +362,7 @@ section#studio {
 }
 
 .gray{
-    color: rgb(172, 172, 172);
+    color: rgb(116 116 116);
 }
 
 .align-right{
@@ -358,10 +387,16 @@ section#studio {
     animation: mover 1s infinite alternate;
 }
 
-.question-quote{
-    margin-bottom: 5px;
+.question-quote {
+    margin-bottom: 20px;
     margin-top: 5px;
     font-size: 1.5em;
+    font-weight: bold;
+}
+
+.align-center{
+    text-align: center;
+    align-self: center;
 }
 
 @-webkit-keyframes mover {
