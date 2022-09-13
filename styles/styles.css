@@ -193,7 +193,7 @@ button,
 }
 
 .main-image {
-    width: min(97%, 700px);
+    width: min(97%, 1000px);
     border-radius: 30px;
     margin-bottom: 30px;
 }
