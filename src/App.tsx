@@ -45,11 +45,8 @@ function App() {
   const location = useLocation();
 
   useEffect(() => {
-    // DISGUSTING CODE TO SUPPORT LEGACY
+    // External redirection
     switch (location.pathname) {
-      case '/studio':
-        window.location.replace('/studio.html')
-        break
       case '/portfolio':
         window.location.replace('https://muelmuel.notion.site/Paul-Bri-re-P-Side-4963602657f94fa383ee73cb0d6877ce')
         break
