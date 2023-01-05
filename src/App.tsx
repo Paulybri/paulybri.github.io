@@ -1,7 +1,7 @@
 import ResponsiveAppBar from "./components/ResponsiveAppBar"
 import { Page } from "./components/Page"
-import { ThemeProvider } from "@emotion/react"
-import { createTheme } from "@mui/material/styles"
+import { ThemeProvider } from "@mui/material"
+import { theme } from './theme'
 import { Container, Divider, Box } from "@mui/material"
 import { Home } from "./pages/Home"
 import { Music } from "./pages/Music"
@@ -12,31 +12,6 @@ import { useEffect, useState } from "react"
 import LoadingPage from "./components/LoadingPage"
 
 export const APP_BAR_HEIGHT = 80
-
-const theme = createTheme({
-  typography: {
-    fontFamily: `'Quicksand', sans-serif`,
-  },
-  components: {
-    MuiButtonBase: {
-      defaultProps: {
-        draggable: false
-      }
-    }
-  },
-  palette: {
-    background: {
-      paper: 'rgb(255 248 231)',
-    },
-    primary: {
-      main: 'rgb(255 220 132)'
-    },
-    secondary: {
-      main: 'rgb(240 204 255)'
-    }
-  }
-})
-
 
 function App() {
 
@@ -82,7 +57,7 @@ function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <LoadingPage theme={theme} open={loading} />
+        <LoadingPage open={loading} />
         <Home id='home' />
         <ResponsiveAppBar />
         <Box

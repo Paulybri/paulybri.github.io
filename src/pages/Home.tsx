@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import { ReactComponent as SiteLogo } from '../icons/P-Side-Logo-500px.svg';
 import { Parallax } from 'react-parallax'
-import { Button, Fade, IconButton, SpeedDial, SpeedDialAction } from "@mui/material";
+import { Button, Fade, IconButton, SpeedDial, SpeedDialAction, useTheme } from "@mui/material";
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import { BsSpotify } from 'react-icons/bs'
 import { BsInstagram } from 'react-icons/bs'
@@ -33,10 +33,11 @@ export function Home({ id }: HomeProps) {
   const [showChevron, setShowChevron] = React.useState<boolean>(false);
 
   const ref = useSyncPagePath(id);
+  const theme = useTheme()
 
   return (
     <>
-      <Parallax style={{ zIndex: 5000 }} blur={5} bgImage="/images/sunset-background.jpg" strength={400} bgImageStyle={{ translate: '0px -200px' }}>
+      <Parallax style={{ zIndex: theme.zIndex.drawer + 1 }} blur={5} bgImage="/images/sunset-background.jpg" strength={400} bgImageStyle={{ translate: '0px -200px' }}>
         <Box
           id={id}
           display='flex'

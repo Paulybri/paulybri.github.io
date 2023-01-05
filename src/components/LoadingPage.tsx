@@ -1,18 +1,17 @@
 
-import { Backdrop, Box, CircularProgress, Theme } from "@mui/material"
+import { Backdrop, Box, CircularProgress, useTheme } from "@mui/material"
 import { ReactComponent as SiteLogo } from '../icons/P-Side-Logo-500px.svg';
 
 interface LoadingPageProps {
-    open: boolean
-    theme: Theme
-}
+    open: boolean}
 
-export default function LoadingPage({ open, theme }: LoadingPageProps) {
+export default function LoadingPage({ open }: LoadingPageProps) {
+    const theme = useTheme()
     return (
         <Backdrop
             sx={{
                 backgroundColor: theme.palette.background.paper,
-                zIndex: (theme) => theme.zIndex.drawer + 1,
+                zIndex: theme.zIndex.drawer + 2,
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: "center"
