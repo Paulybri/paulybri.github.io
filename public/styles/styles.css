@@ -1,0 +1,442 @@
+body,
+html {
+    height: 100vh;
+    background-color: rgb(222 182 126);
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.vl {
+    border-left: 1px solid rgba(0, 0, 0, 0.411);
+    height: 50px
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-top: 25px;
+}
+
+section#home {
+    padding-top: 25px;
+    margin-bottom: 100px;
+}
+
+section#socials {
+    margin-bottom: 125px;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 10 0;
+}
+
+h2 {
+    font-size: 2em;
+    color: #00000098;
+    margin: 10 0;
+}
+
+h3 {
+    font-size: 1.6em;
+    color: #00000094;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.4em;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-menu {
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffd0b2ff;
+    padding: 5px 0px;
+    box-sizing: border-box;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+}
+
+.top-menu-container {
+    width: 95%;
+}
+
+.top-menu-button {
+    height: 100%;
+    font-size: 1.5em;
+    padding: 0 10;
+    transform: scale(1);
+    transition: transform 0.3s;
+    overflow: visible;
+}
+
+.top-menu-button:hover {
+    transform: scale(1.1);
+}
+
+button,
+.button {
+    font-family: 'Open Sans Condensed', sans-serif;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    border: none;
+    border-radius: 10px;
+    font-size: 2em;
+    padding: 10 15;
+    background-color: #ffc786;
+    cursor: pointer;
+}
+
+.icon-button {
+    background-color: #00000054;
+    border-width: 1px;
+    color: #eaa468;
+    cursor: pointer;
+    margin: 4 4;
+    font-size: 3.5em;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.icon-button:active,
+.icon-button:visited {
+    color: #eaa468;
+    background-color: #00000054;
+}
+
+.smaller-icon-button {
+    width: 60px;
+    height: 60px;
+    font-size: 2.5em;
+}
+
+.social-button {
+    background-color: #00000054;
+    border-width: 1px;
+    color: #eaa468;
+    cursor: pointer;
+    margin: 4 4;
+    font-size: 3.5em;
+    width: 95px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.social-button:hover {
+    color: #eaa468;
+    background-color: #000000a9;
+}
+
+.social-button:active,
+.social-button:visited {
+    color: #eaa468;
+}
+
+.bg-image {
+    overflow: hidden;
+    /* The image used */
+    background-image: url("../img/pexels-abdullah-ghatasheh-1631678.jpg");
+    /* Add the blur effect */
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transform: scale(1.03);
+    position: relative;
+    /* Full height */
+    height: 120vh;
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: auto;
+    top: 43px;
+    flex: 1;
+    width: 100%;
+    height: calc(100vh - 43px);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.logo-image {
+    width: min(80%, 300px);
+    text-align: center;
+}
+
+.main-image {
+    width: min(97%, 1000px);
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.release {
+    width: min(80%, 500px);
+    text-align: center;
+    background-color: #ffd0b266;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.release h1 {
+    width: min(80%, 500px);
+}
+
+.release-image {
+    width: min(80%, 500px);
+}
+
+.release-button {
+    align-items: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 3em;
+    background-color: #ffc786;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.release-button>i {
+    font-size: 0.7em;
+    margin-right: 10px;
+}
+
+.release-button:hover {
+    transform: scale(1.1);
+}
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: 0px 50px;
+    margin-bottom: 30px;
+}
+
+.about {
+    width: min(100%, 800px);
+}
+
+.about-image {
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(#e8a35e00 60%, #e8a45e), url('../img/cailloux.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.about-text {
+    width: 100%;
+    background-color: #e8a45e;
+    margin-top: 0px;
+    padding: 10px 20px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.studio {
+    display: flex;
+    flex-direction: column;
+    width: min(80%, 800px);
+    justify-content: left;
+    text-align: left;
+}
+
+.packages {
+    display: flex;
+    flex-direction: column;
+    width: min(95%, 800px);
+    justify-content: left;
+    text-align: left;
+}
+
+section#studio {
+    margin-bottom: 250px;
+    background-color: #ffd0b266;
+}
+
+.studio-logo {
+    margin-top: 100px;
+    align-self: center;
+    width: min(80%, 300px);
+    margin-bottom: 50px;
+}
+
+.studio-image {
+    align-self: center;
+    width: min(100%, 600px);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.studio-button {
+    width: fit-content;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+
+.studio-button:hover {
+    transform: scale(1.1);
+}
+
+.portfolio-button {
+    background-color: #ffc98a75;
+    font-size: 1.7em;
+}
+
+.studio-service-list {
+    display: flex;
+    flex-direction: column;
+    margin: 30 0;
+    justify-content: left;
+}
+
+.studio-service-list p {
+    margin: 11px 0px;
+}
+
+.studio-service-list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.studio-service-package {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 25px;
+    font-size: 3.5em;
+}
+
+.studio-service-icon {
+    font-size: 3.0em;
+}
+
+.studio-service-label {
+    font-size: 2.5em;
+    margin-left: 20;
+}
+
+#pricing{
+    background-color: #ffd0b2c7;
+}
+
+.pricing-table{
+    margin-top: 30px;
+    border-collapse : collapse; 
+    width: min(95%, 1200px);
+    text-align: center;
+}
+
+.pricing-table td{
+    height : 50px;
+}
+
+/* First column of table */
+.pricing-table-first-column{  
+    font-size: min(1.3em, 3vw);
+    text-align: right;
+}
+
+.pricing-table-header{
+    font-size: min(1.6em, 3vw);
+    font-weight: bolder;  
+}
+
+.pricing-table-footer{
+    border-top: 1px solid rgb(71, 71, 71);
+    font-size: min(1.8em, 4vw);
+}
+
+.pricing-icon{
+    font-size: min(1.3em, 4vw);
+}
+
+.green{
+    color: rgb(97, 161, 97);
+}
+
+.gray{
+    color: rgb(116 116 116);
+}
+
+.align-right{
+    align-self: right;
+    text-align: right;
+}
+
+.footer {
+    width: 100%;
+    background-color: #ffc786;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10 30;
+    margin-top: 100px;
+    font-size: x-large;
+    box-sizing: border-box;
+}
+
+.arrow-down {
+    font-size: 4em;
+    -webkit-animation: mover 1s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+.question-quote {
+    margin-bottom: 20px;
+    margin-top: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.align-center{
+    text-align: center;
+    align-self: center;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
