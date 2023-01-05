@@ -6,7 +6,7 @@ export const useSyncPagePath = (path: string) => {
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             if (entry.isIntersecting) {
-                window.history.replaceState(null, "", '/' + path)
+                window.history.replaceState(null, "", '#/' + path)
             }
         }, { rootMargin: "-100px" });
 

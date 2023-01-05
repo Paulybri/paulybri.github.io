@@ -79,7 +79,7 @@ export function Home({ id }: HomeProps) {
               <Button
                 color="inherit"
                 component={Link}
-                to='/body'>
+                to='body'>
                 <BsChevronDown fontSize={60} />
               </Button>
             </Box>

@@ -15,9 +15,9 @@ import PersonIcon from '@mui/icons-material/Person';
 import { APP_BAR_HEIGHT } from '../App'
 
 const pages = [
-  { title: 'Music', url: '/music', icon: <LibraryMusicIcon /> },
-  { title: 'About', url: '/about', icon: <InfoIcon /> },
-  { title: 'Contact', url: '/contact', icon: <PersonIcon /> },
+  { title: 'Music', url: 'music', icon: <LibraryMusicIcon /> },
+  { title: 'About', url: 'about', icon: <InfoIcon /> },
+  { title: 'Contact', url: 'contact', icon: <PersonIcon /> },
 ]
 
 function ResponsiveAppBar() {
@@ -69,7 +69,7 @@ function ResponsiveAppBar() {
         <Container maxWidth="xl">
           <Toolbar disableGutters>
             {/* Desktop Layout */}
-            <Button component={Link} to='' sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, mr: 1, pt: 1.1, pb: 0.6 }}>
+            <Button component={Link} to='home' sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' }, mr: 1, pt: 1.1, pb: 0.6 }}>
               {siteLogoComponent}
             </Button>
             <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, ml: 1 }}>
@@ -104,7 +104,7 @@ function ResponsiveAppBar() {
                 <MenuIcon />
               </IconButton>
             </Box>
-            <Button component={Link} to='' sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' }, mr: 1, pt: 1.1, pb: 0.6 }}>
+            <Button component={Link} to='home' sx={{ flexGrow: 0, display: { xs: 'flex', md: 'none' }, mr: 1, pt: 1.1, pb: 0.6 }}>
               {siteLogoComponent}
             </Button>
             <Box sx={{ mr: 4, flexGrow: 1, display: { xs: 'flex', md: 'none' } }} />
