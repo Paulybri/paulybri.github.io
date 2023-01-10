@@ -37,7 +37,7 @@ export function Home({ id }: HomeProps) {
 
   return (
     <>
-      <Parallax style={{ zIndex: theme.zIndex.drawer + 1 }} blur={5} bgImage="/images/sunset-background.jpg" strength={400} bgImageStyle={{ translate: '0px -200px' }}>
+      <Parallax style={{ zIndex: theme.zIndex.drawer - 1 }} blur={5} bgImage="/images/sunset-background.jpg" strength={400} bgImageStyle={{ translate: '0px -200px' }}>
         <Box
           id={id}
           display='flex'
