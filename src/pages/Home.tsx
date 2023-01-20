@@ -46,7 +46,7 @@ export function Home({ id }: HomeProps) {
           flexDirection='column'
           width='100%'
           style={{
-            height: `calc(100dvh - ${APP_BAR_HEIGHT}px)`,
+            height: `calc(${window.innerHeight}px - ${APP_BAR_HEIGHT}px)`,
           }}>
           <Fade in timeout={2000} onEntering={() => setShowSocialButtons(true)}>
             <Box ref={ref} width='80%' maxWidth={500} height='60%'>

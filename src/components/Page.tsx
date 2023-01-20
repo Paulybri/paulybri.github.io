@@ -20,7 +20,7 @@ export const Page: React.FC<PageProps> = ({
 
     id={id}
     style={{
-      minHeight: `calc(100dvh - ${APP_BAR_HEIGHT}px)`,
+      minHeight: `calc(${window.innerHeight}px - ${APP_BAR_HEIGHT}px)`,
     }}>
     <Box py={7}>
       <Typography ref={topRef} gutterBottom variant="h2" textAlign={{ xs: 'center', md: 'left' }}>
