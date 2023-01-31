@@ -12,7 +12,7 @@ export function Music({ onAllImagesLoaded }: MusicProps) {
       title: 'The Distance',
       imgUrl: '/images/cover_art/The Distance Cover.jpg',
       releaseDate: '09-11-2022',
-      presaveUrl: 'http://pside.ca/music/the-distance'
+      presaveUrl: 'https://distrokid.com/hyperfollow/pside1/the-distance-2'
     },
     {
       title: 'Bottle Vision',
