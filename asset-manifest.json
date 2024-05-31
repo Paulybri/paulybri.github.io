@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ce5248ed.css",
-    "main.js": "/static/js/main.a9fe497e.js",
+    "main.js": "/static/js/main.db1bddf8.js",
     "static/js/787.9d823580.chunk.js": "/static/js/787.9d823580.chunk.js",
     "static/media/caveat-all-500-normal.woff": "/static/media/caveat-all-500-normal.6c9291c27a7fde44b04b.woff",
     "static/media/caveat-all-700-normal.woff": "/static/media/caveat-all-700-normal.0857c969d94bbcd86133.woff",
@@ -62,18 +62,18 @@
     "static/media/quicksand-vietnamese-400-normal.woff2": "/static/media/quicksand-vietnamese-400-normal.001708e70ef991eec89b.woff2",
     "static/media/quicksand-vietnamese-300-normal.woff2": "/static/media/quicksand-vietnamese-300-normal.8c97d2d477027fad9cd6.woff2",
     "static/media/quicksand-vietnamese-700-normal.woff2": "/static/media/quicksand-vietnamese-700-normal.f16da1766f969ce75e43.woff2",
-    "static/media/P-Side-Logo-500px.svg": "/static/media/P-Side-Logo-500px.08da272424af1edb4acfab66a268279b.svg",
+    "static/media/P-Side-Logo-500px.svg": "/static/media/P-Side-Logo-500px.8cf934a23e025912817dfe844e735e5d.svg",
     "static/media/roboto-greek-ext-500-normal.woff2": "/static/media/roboto-greek-ext-500-normal.6fb9cffb1d3e72bf9293.woff2",
     "static/media/roboto-greek-ext-400-normal.woff2": "/static/media/roboto-greek-ext-400-normal.169619821ea93019d1bb.woff2",
     "static/media/roboto-greek-ext-300-normal.woff2": "/static/media/roboto-greek-ext-300-normal.35b9d6be04b95f0f0530.woff2",
     "static/media/roboto-greek-ext-700-normal.woff2": "/static/media/roboto-greek-ext-700-normal.bd9854c751441ccc1a70.woff2",
     "index.html": "/index.html",
     "main.ce5248ed.css.map": "/static/css/main.ce5248ed.css.map",
-    "main.a9fe497e.js.map": "/static/js/main.a9fe497e.js.map",
+    "main.db1bddf8.js.map": "/static/js/main.db1bddf8.js.map",
     "787.9d823580.chunk.js.map": "/static/js/787.9d823580.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce5248ed.css",
-    "static/js/main.a9fe497e.js"
+    "static/js/main.db1bddf8.js"
   ]
 }
