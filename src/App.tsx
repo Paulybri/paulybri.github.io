@@ -57,12 +57,8 @@ function App() {
             backgroundRepeat: 'no-repeat',
           }}>
           <Container id='body'>
-            <Page title="Music" id="music">
-              <Music onAllImagesLoaded={() => imagesLoaded()} />
-            </Page>
-            <Divider />
             <Page title="About" id="about">
-              <About />
+              <About onAllImagesLoaded={() => imagesLoaded()}/>
             </Page>
             <Divider />
             <Page title="Contact" id="contact">

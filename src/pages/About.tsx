@@ -40,7 +40,13 @@ const ContourBox: React.FC<ContourProps> = ({
   p: { xs: 'none', md: padding }
 }}> {children}</Box >
 
-export function About() {
+interface AboutProps {
+
+  onAllImagesLoaded: (() => void)
+}
+
+export function About({ onAllImagesLoaded }: AboutProps) {
+  onAllImagesLoaded()
   return (
     <Container sx={{ height: "", my: 4, display: 'flex', flexDirection: 'column', gap: 7, alignItems: 'center' }}>
       <ContourBox color='rgba(255, 255, 255, 0.1)' padding={0.5}>

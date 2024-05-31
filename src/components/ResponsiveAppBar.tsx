@@ -15,7 +15,6 @@ import PersonIcon from '@mui/icons-material/Person';
 import { APP_BAR_HEIGHT } from '../App'
 
 const pages = [
-  { title: 'Music', url: 'music', icon: <LibraryMusicIcon /> },
   { title: 'About', url: 'about', icon: <InfoIcon /> },
   { title: 'Contact', url: 'contact', icon: <PersonIcon /> },
 ]
